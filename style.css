@@ -1,0 +1,127 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f4f4fc;
+}
+
+/* Estilo para el header */
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 2%;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+}
+
+/* Estilo para el main */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px; /* Ajusta el ancho máximo según sea necesario */
+    margin: 20px auto; /* Centra el contenedor principal horizontalmente */
+}
+
+/* Estilo para el cuadro de texto de entrada */
+.texto-entrada {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; /* Espacio entre el texto de entrada y la caja de resultados */
+}
+
+textarea {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 20px;
+    text-transform: lowercase;
+    font-size: 18px;
+    color: #0A3871;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: agrega sombra para mejorar la visibilidad */
+}
+
+/* Estilo para los botones debajo del texto */
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#btnEncriptar {
+    background-color: #0A3871;
+    color: white;
+}
+
+#btnDesencriptar {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+/* Estilo para el recuadro de resultados */
+.recuadro-resultados {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+    height: 100%; /* Asegura que el contenedor ocupa toda la altura disponible */
+    max-width: 400px; /* Limita el ancho máximo del contenedor de resultados */
+}
+
+.resultado {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    min-height: 50px;
+    margin-bottom: 20px;
+}
+
+#textoResultado {
+    font-size: 18px;
+    color: #333;
+}
+
+.contenedor-dibujo {
+    margin-bottom: 20px;
+}
+
+#btnCopiar {
+    background-color: #ffffff;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+/* Estilo para la alerta */
+.alerta {
+    font-size: 16px;
+    color: #495057;
+}
